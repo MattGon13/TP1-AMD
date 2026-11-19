@@ -1,0 +1,37 @@
+PTS | mLDm | checking container tool: podman
+
+COMMAND: C:\Users\mdgon\AppData\Local\Programs\Podman\podman.EXE --version
+RETURN_CODE: 0
+
+STDOUT:
+podman.EXE version 6.0.2
+
+STDERR:
+
+
+COMMAND: C:\Users\mdgon\AppData\Local\Programs\Podman\podman.EXE compose version
+RETURN_CODE: 0
+
+STDOUT:
+Docker Compose version v5.0.2
+
+STDERR:
+[4m>>>> Executing external compose provider "C:\\Program Files\\Docker\\Docker\\resources\\bin\\docker-compose.exe". Please see podman-compose(1) for how to disable this message. <<<<
+
+[0m
+
+COMMAND: C:\Users\mdgon\AppData\Local\Programs\Podman\podman.EXE ps
+RETURN_CODE: 0
+
+STDOUT:
+CONTAINER ID  IMAGE                            COMMAND     CREATED         STATUS         PORTS                          NAMES
+c9294d1ea99c  docker.io/dpage/pgadmin4:latest              34 seconds ago  Up 34 seconds  0.0.0.0:5050->80/tcp, 443/tcp  mldm_pgadmin
+0305209198b0  docker.io/library/postgres:16    postgres    34 seconds ago  Up 34 seconds  0.0.0.0:5432->5432/tcp         mldm_postgres
+
+STDERR:
+
+
+PTS | mLDm | container-tool-ok: podman
+
+PTS | mLDm | docker check skipped because podman is OK
+PTS | mLDm | at least one container tool is available

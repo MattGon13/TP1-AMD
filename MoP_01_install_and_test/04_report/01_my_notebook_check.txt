@@ -1,0 +1,24 @@
+PTS | mLDm | notebook evidence
+timestamp: 2026-09-25T22:48:22
+platform: Windows-11-10.0.26200-SP0
+workspace_path: C:\ISEL\1 SEMESTRE MESTRADO\AMD\mLDm_MoP_workspace
+mop_path: C:\ISEL\1 SEMESTRE MESTRADO\AMD\mLDm_MoP_workspace\MoP_01_install_and_test
+python_executable: C:\ISEL\1 SEMESTRE MESTRADO\AMD\mLDm_MoP_workspace\__venv\Scripts\python.exe
+kernel_uses_virtual_environment: True 
+
+package_check:
+numpy: OK | 2.5.1
+pandas: OK | 3.0.3
+duckdb: OK | 1.5.4
+psycopg: OK | 3.3.4
+scikit-learn: OK | 1.9.0
+matplotlib: OK | 3.11.0
+plotly: OK | 6.9.0
+jupyterlab: OK | 4.6.1
+ipykernel: OK | 7.3.0
+ipywidgets: OK | 8.1.8
+
+required_packages_imported: yes
+failed_imports: none
+widget_displayed: yes/no
+problems_found: <describe, if any>

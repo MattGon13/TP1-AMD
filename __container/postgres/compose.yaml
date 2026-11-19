@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: mldm_postgres
+    environment:
+      POSTGRES_DB: mldm
+      POSTGRES_USER: mldm
+      POSTGRES_PASSWORD: mldm
+      POSTGRES_HOST_AUTH_METHOD: trust
+    ports:
+      - "5432:5432"
+    volumes:
+      - mldm_pgdata:/var/lib/postgresql/data
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: mldm_pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80"
+    volumes:
+      - mldm_pgadmin_data:/var/lib/pgadmin
+
+volumes:
+  mldm_pgdata:
+  mldm_pgadmin_data:
