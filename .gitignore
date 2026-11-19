@@ -1,2 +1,4 @@
 __venv
 .ipynb_checkpoints
+__container\postgres\data_pgadmin
+__container\postgres\data_postgres
